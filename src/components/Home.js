@@ -1,11 +1,13 @@
-import MuiTable from "./table";
+// import Table1 from "./table/table1";
+import Table2 from "./table/table2";
 
 const Home = () => {
   return (
     <section>
       <h1>Home</h1>
       <br />
-      <MuiTable />
+      {/* <Table1 /> */}
+      <Table2 />
     </section>
   );
 };
