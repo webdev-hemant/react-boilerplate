@@ -1,12 +1,12 @@
 import axios from 'axios';
-const BASE_URL = 'backend endpoint here';
+import { API_BASE_URL } from '../constants/allEnv';
 
 export default axios.create({
-    baseURL: BASE_URL
+    baseURL: API_BASE_URL
 });
 
 export const axiosPrivate = axios.create({
-    baseURL: BASE_URL,
+    baseURL: API_BASE_URL,
     headers: { 'Content-Type': 'application/json' },
     withCredentials: true
 });

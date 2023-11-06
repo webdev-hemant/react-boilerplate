@@ -3,7 +3,6 @@ import Layout from "./components/Layout";
 import Missing from "./components/Missing";
 import { Routes, Route } from "react-router-dom";
 
-
 const App = () => {
   return (
     <Routes>
