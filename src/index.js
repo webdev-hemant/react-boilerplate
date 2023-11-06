@@ -1,18 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { AuthProvider } from './context/AuthProvider';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
+console.log('base url', process.env.REACT_APP_BASE_URL)
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <AuthProvider>
-        <App />
-      </AuthProvider>
+      <App />
     </BrowserRouter>
   </React.StrictMode>
 );
